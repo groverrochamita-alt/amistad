@@ -1,0 +1,146 @@
+.fem-container {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 30% 20%, #2a0818 0%, #0d0008 60%, #1a0510 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fem-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 40, 120, 0.1), transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.fem-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* ── Welcome card ── */
+.fem-welcome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 80, 150, 0.18);
+  border-radius: 32px;
+  padding: 48px 44px 44px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 30px 80px rgba(0,0,0,0.6),
+    0 0 80px rgba(200,40,120,0.07);
+}
+
+/* ── Regalo SVG ── */
+.gift-svg-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.gift-glow {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 80, 180, 0.3), transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Texto bienvenida ── */
+.fem-welcome-text {
+  margin-top: 4px;
+}
+
+.fem-welcome-greeting {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.fem-name-highlight {
+  display: block;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #ff69b4;
+  text-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  font-weight: 400;
+}
+
+.fem-welcome-sub {
+  color: rgba(255, 200, 230, 0.55);
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* ── Botón sorpresa ── */
+.fem-surprise-btn {
+  margin-top: 24px;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #c0206a, #ff4d9e, #ff80c0);
+  background-size: 200% 100%;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 6px 24px rgba(255, 60, 140, 0.45),
+    0 0 0 1px rgba(255,255,255,0.1) inset;
+  letter-spacing: 0.5px;
+}
+
+.btn-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  width: 40%;
+  pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .fem-welcome-card {
+    padding: 32px 20px 28px;
+    border-radius: 24px;
+    margin: 0 12px;
+  }
+
+  .fem-welcome-greeting {
+    font-size: 1.1rem;
+  }
+
+  .fem-name-highlight {
+    font-size: 1.25rem;
+  }
+
+  .fem-surprise-btn {
+    padding: 12px 32px;
+    font-size: 0.95rem;
+  }
+}
