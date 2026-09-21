@@ -122,7 +122,7 @@ function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
           >
-            {'Mi Regalo del\nDía de la Amistad'.split('\n').map((line, i) => (
+            {'Mi regalo para ti\nDía de la Amistad'.split('\n').map((line, i) => (
               <span key={i} className="headline-line">
                 {line.split('').map((char, j) => (
                   <motion.span
