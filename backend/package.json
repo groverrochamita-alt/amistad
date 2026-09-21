@@ -9,7 +9,8 @@
     "node": ">=20.19.0"
   },
   "scripts": {
-    "build": "prisma generate && nest build",
+    "build": "nest build",
+    "postinstall": "prisma generate",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/main",
     "start:prod": "node dist/main",
